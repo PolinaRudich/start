@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <h1 class="title">Вакансия: Junior Frontend Developer</h1>
+    </header>
+    <main class="page">
+        <div class="main-profile">
+            <div class="main-info" >
+                <img class="candidate-photo" src="./images/candidate.jpg" alt="photo">
+                <div class="container">
+                <div class="text-info-about-candidate">
+                    <h2>Имя: Ваше имя</h2>
+                    <div class="git-photo">
+                    <a href="https://github.com/RokudoFran" target="_blank" class="git-link">
+                        <img class="git-cat" src="./images/cat_git.png" alt="pic">
+                    </a>
+                    <h2>Опыт работы: нет</h2>
+                </div>
+            </div>
+                </div> 
+            </div>
+        </div>
+        <div class="profile">
+            <form action="">
+            <div class="date">
+                <h3>Дата собеседования</h3>
+                <input class="date-picker" type="date" id="date" name="date_interview">
+            </div>
+            <div class="en-lvl">
+                <h3>Уровень английского</h3>
+                <div class="inputs">
+                <input type="radio" id="bad"
+                name="grade" value="bad">
+               <label for="bad">Плохо</label>
+           
+               <input type="radio" id="middle"
+                name="grade" value="middle">
+               <label for="middle">Средне</label>
+           
+               <input type="radio" id="good"
+                name="grade" value="good">
+               <label for="good">Хорошо</label>
+
+               <input type="radio" id="excellent"
+               name="grade" value="excellent">
+              <label for="excellent">Превосходно</label>
+            </div>
+            </div>
+            <div class="skills">
+                <h3>Ключевые навыки</h3>
+                <ul>
+                    <li>- HTML</li>
+                    <li>- CSS/LESS</li>
+                    <li>- JavaScript</li>
+                </ul>
+                <input class="textBox_skill" maxlength="20" id="textbox_skill" placeholder="Введите навык">
+                <button class="button_addNewSkill" type="submit">Добавить навык</button>
+            </div>
+            
+            <div>
+            <h4>Коммуникабельность</h4>
+            <select class="communication" id="communication" name="candidate_communication" aria-placeholder="Выбрать">
+                <option value="too_low_communication">Отвечает односложно</option>
+                <option value="low_communication">Отвечает развернуто</option>
+                <option value="communicative">Приятно поболтали</option>
+                <option value="too_communicative">Лучше не начинать говорить</option>
+            </select>
+        </div>
+        <div>
+            <h4>Желаемая З/П</h4>
+            <input class="textBox_skill" maxlength="20" id="amount" placeholder="Введите денюжку">
+        </div>
+           
+            <h4>Подходит по критериям</h4>
+            <div>
+            <input type="checkbox" checked id="salary" name="salary">
+            <label for="salary">Оклад</label>
+            
+            <input type="checkbox" checked id="english_knowledge" name="english_knowledge">
+            <label for="english_knowledge">Знание английского</label>
+            <input type="checkbox" checked id="skill" name="skill">
+            <label for="skill">Навыки</label>
+            <input type="checkbox" checked id="our_person" name="our_person">
+            <label for="our_person">Сразу видно, что наш человек</label>
+        </div>
+        </form>
+            <h3>Курсы, образование</h3>
+            <table cellpadding="5">
+                <tr>
+                  <td></td>
+                  <td>Сроки обучения</td>
+                  <td>Наименование учебного заведения, курсов</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>2009-2020</td>
+                  <td>ГБОУ СОШ №290</td>
+                </tr>
+               
+                <tr>
+                  <td>2</td>
+                  <td>20.07.20 - 20.27.07.20</td>
+                  <td>Скиллбокс</td>
+                </tr>
+              </table>
+        </div>
+    </main>
+</div>
+</body>
+</html>

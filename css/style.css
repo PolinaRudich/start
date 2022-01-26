@@ -1,0 +1,177 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  nav, footer, header, aside {
+    display: block;
+  }
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  input, button, textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  a, a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  h2,  h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  .wrapper{
+      padding: 10px 10px 0px 25px;
+  }
+  @media (max-width:1000px){
+    .candidate-photo {
+      width: 25%;
+      height: 25%;
+    }
+}
+  .main-profile{
+    
+  }
+  .candidate-photo {
+   width: 15%;
+   height: 15%;
+   display: flex;
+  }
+  .main-info{
+      padding-top: 15px;
+      height: 10%;
+      display: flex;
+
+      
+  }
+  .text-info-about-candidate{
+    font-size: 20px;
+     flex-direction: column;
+     display: flex;
+  }
+
+.git-cat{
+ margin-top: 2%;
+  width: 15%;
+  height: 15%;
+}
+.container{
+  margin: 1%;
+}
+
+/* PROFILE*/
+
+.profile{
+  padding: 10px 10px;
+  
+  
+}
+.date{
+  display: flex;
+}
+.date-picker{
+  margin-left: 10px;
+}
+h3{
+  font-size: 20px;
+  margin: 10px;
+  display: inline-block;
+ 
+}
+h4{
+  font-size: 20px;
+  margin: 10px 0px;
+  font-weight:bold;
+  display: inline-block;
+}
+
+.en-lvl{
+  display: flex;
+  flex-direction: column;
+}
+.textBox_skill{
+  padding: 5px;
+  margin:15px 5px 10px 0px;
+  height: 15px;
+  border:1px solid rgb(82, 54, 13);
+  border-radius: 37px;
+}
+.button_addNewSkill{
+   border-radius: 37px;
+    min-height: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 36px;
+    color: rgb(82, 54, 13);
+    background-color: rgb(167, 252, 255);
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+}
+.communication{
+  border-radius: 37px;
+  min-height: 20px;
+  border:1px solid rgb(82, 54, 13);
+  padding: 5px 36px;
+  margin-left: 15px;
+  color: rgb(82, 54, 13);
+  font-weight: 700;
+  max-width: 250px;
+  text-align:  left;
+}
+label{
+  margin-right: 5px;
+}
+li{
+  margin-bottom: 5px;
+}
+table, td,tr{
+  border:1px solid black; 
+  border-color: black;
+  padding: 10px;
+  text-align: center;
+
+  
+}
+table{
+  border-collapse: collapse;
+  
+  
+}
+table tr:nth-child(odd) {
+  background-color: #a5a5a5;
+}
