@@ -3,24 +3,46 @@
   padding: 0;
   margin: 0;
   border: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  
 }
 nav, footer, header, aside {
   display: block;
 }
+header{
+  padding: 20px 0px 20px 10px;
+}
 html, body {
-  height: 100%;
+
   width: 100%;
+ 
+  object-fit: cover;
+  position: absolute;
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background: linear-gradient(rgb(206, 206, 206), pink);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.container{
+  height:100%;
+}
+html{
+ 
 }
 input, button, textarea {
   font-family: inherit;
+  
 }
-
+.inputs{
+  padding: 15px;
+}
 input::-ms-clear {
   display: none;
 }
@@ -53,10 +75,27 @@ img {
 h2,  h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
+  font-family: Montserrat;
+}
+option{
+  font-family: Montserrat;
 }
 .wrapper{
-    padding: 10px 10px 0px 25px;
+  width: 800px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  box-shadow:0 0 15px rgb(168, 128, 168);
+  background: url(../images/depositphotos_10086234-stock-photo-soft-pink-background.jpg);
+  background-position: 0 0;
+background-repeat: no-repeat;
+background-size: 100% auto;
+
 }
+
 @media (max-width:1000px){
   .candidate-photo {
     width: 25%;
@@ -69,7 +108,17 @@ h2,  h4, h5, h6 {
 .candidate-photo {
  width: 15%;
  height: 15%;
+ margin:0px 20px;
+
  display: flex;
+}
+img  {
+  transition:transform 2s ease-in-out;       
+}
+
+ img:hover {
+  
+          transform: rotate(720deg);
 }
 .main-info{
     padding-top: 15px;
@@ -94,20 +143,27 @@ height: 15%;
 /* PROFILE*/
 
 .profile{
-padding: 10px 10px;
+padding: 0px 10px;
 
 
 }
 .date{
 display: flex;
 }
+
 .date-picker{
-margin-left: 10px;
+background-color: rgb(255, 236, 254);
+box-shadow: 0 0 10px rgb(255, 255, 255);
+padding: 0px 15px;
+
+
+border-radius: 40%;
 }
 h3{
 font-size: 20px;
 margin: 10px;
 display: inline-block;
+font-family: 'Mochiy Pop P One', sans-serif;
 
 }
 h4{
@@ -129,11 +185,24 @@ border:1px solid rgb(82, 54, 13);
 border-radius: 37px;
 }
 
-
+label{
+  padding-right: 10px;
+}
 .list{
 opacity: 1;
 
 }
+ul li{
+  margin-left: 10px;
+}
+.textBox_skill{
+  height: 40px;
+  padding: 5px;
+}
+.textBox_skill:hover{
+  box-shadow: 0 0 10px white;
+}
+
 .ic{
  
  margin-left:-19px;
@@ -173,28 +242,35 @@ opacity: 1;
 .textSalary{
 
 }
+
 .button_addNewSkill{
  border-radius: 37px;
   min-height: 20px;
   justify-content: center;
   align-items: center;
   padding: 5px 36px;
-  color: rgb(82, 54, 13);
-  background-color: rgb(167, 252, 255);
+  color: rgb(160, 79, 160);
+  background-color: rgb(251, 218, 255);
   font-weight: 700;
   line-height: 150%;
+  height: 40px;
   text-align: center;
+  border: 1px solid rgb(160, 79, 160);
+  box-shadow: 0 0 10px white;
 }
 .communication{
 border-radius: 37px;
 min-height: 20px;
 border:1px solid rgb(82, 54, 13);
+background-color: rgb(251, 218, 255);
 padding: 5px 36px;
 margin-left: 15px;
-color: rgb(82, 54, 13);
+color: rgb(160, 79, 160);
 font-weight: 700;
 max-width: 250px;
 text-align:  left;
+border: 1px solid rgb(160, 79, 160);
+box-shadow: 0 0 10px white;
 }
 label{
 margin-right: 5px;
@@ -217,4 +293,10 @@ border-collapse: collapse;
 }
 table tr:nth-child(odd) {
 background-color: #a5a5a5;
+}
+table tr:hover{
+  box-shadow: 0 0 5px black;
+}
+h1{
+  font-family: 'Mochiy Pop P One', sans-serif;  
 }
