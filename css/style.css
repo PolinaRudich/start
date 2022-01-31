@@ -112,11 +112,11 @@ background-size: 100% auto;
 
  display: flex;
 }
-img  {
+.main-info #ph{
   transition:transform 2s ease-in-out;       
 }
 
- img:hover {
+ .main-info #ph:hover {
   
           transform: rotate(720deg);
 }
