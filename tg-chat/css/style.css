@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+    padding: 0;
+    margin: 0;
+    
+}
+.main-block{
+    max-width: 800px;
+    height: 600px;
+    margin: 30px auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: relative;
+    background-color:rgb(167, 151, 129);  
+}
+header{
+    display: block;
+    min-height: 70px;
+    background-color: rgb(240, 225, 202);
+    padding-bottom: 4px;
+    right: 0;
+    position: sticky;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+button{
+    width: 20px;
+    height: 20px;
+}
+.text-block{
+    padding-left: 10px;
+}
+.close-button{
+    padding-right:10px;
+    padding-top: 5px;
+}
+button{
+    background-color: rgb(202, 180, 146);
+}
+.info-block{
+    height: 530px;
+}
+.grid-container{
+    display: grid;
+    align-items: center;
+    
+    width: 100%;
+    grid-template-rows:repeat(8, auto);
+    grid-template-columns: 1fr 5fr;
+}
+.user-flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user{
+    padding:8px 0px 0px 0px;
+    padding-right: 0px;
+    width: 150px;
+    display: inline;
+    background-color:rgb(167, 151, 129);  
+    justify-self: center;
+}
+
+.user-image{
+text-align: center;
+padding-top: 15px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(240, 225, 202);
+    border-radius: 50%;
+}
+.user-info{
+    padding-left: 4px;
+}
+.block-message{
+    min-height:70px;
+    max-width: 600px;
+    background-color: rgb(219, 206, 186);
+    overflow:auto;
+}
+.message{
+
+    border-left: 4px solid black;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+ /* SCROLLBAR */
+ /* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 24px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: #aa977a;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #7a7062;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #8d8576;
+    box-shadow: inset 0px 0px 10px #fffbf3;;
+}
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, #524a3f 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(240deg, #524a3f 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(0deg, #524a3f 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+        linear-gradient(300deg, #524a3f 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(60deg, #524a3f 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(180deg, #524a3f 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+        linear-gradient(30deg, #524a3f 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(150deg, #524a3f 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(270deg, #524a3f 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+        linear-gradient(210deg, #524a3f 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(330deg, #524a3f 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(90deg, #524a3f 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}

@@ -14,8 +14,8 @@ header{
   padding: 20px 0px 20px 10px;
 }
 html, body {
-
-  width: 100%;
+  width:100vw;
+  height: 100vh;
  min-width:800px ;
   object-fit: cover;
   position: absolute;
@@ -71,13 +71,11 @@ img {
   vertical-align: top;
 }
 
-h2,  h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
-  font-family: Montserrat;
-}
 option{
   font-family: Montserrat;
+}
+ .profile label{
+  font-family:Montserrat;
 }
 .wrapper{
   width: 800px;
@@ -92,7 +90,7 @@ option{
 background-attachment: fixed;
   background-position: 0 0;
 background-repeat: no-repeat;
-background-size: 100% auto;
+background-size: cover;
 
 }
 
@@ -102,9 +100,7 @@ background-size: 100% auto;
     height: 25%;
   }
 }
-.main-profile{
-  
-}
+
 .candidate-photo {
  width: 15%;
  height: 15%;
@@ -112,11 +108,12 @@ background-size: 100% auto;
 
  display: flex;
 }
-.main-info #ph{
+
+ #ph{
   transition:transform 2s ease-in-out;       
 }
 
- .main-info #ph:hover {
+ #ph:hover {
   
           transform: rotate(720deg);
 }
@@ -155,9 +152,11 @@ display: flex;
 background-color: rgb(255, 236, 254);
 box-shadow: 0 0 10px rgb(255, 255, 255);
 padding: 0px 15px;
-
-
 border-radius: 40%;
+}
+input:hover, :focus {
+  outline: 0;
+  
 }
 h3{
 font-size: 20px;
@@ -188,10 +187,6 @@ border-radius: 37px;
 label{
   padding-right: 10px;
 }
-.list{
-opacity: 1;
-
-}
 ul li{
   margin-left: 10px;
 }
@@ -208,9 +203,7 @@ ul li{
  margin-left:-19px;
  width: 15px;
 }
-.labelSalary{
 
-}
 .checkboxSalary{
 display: none;
 
